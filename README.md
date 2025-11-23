@@ -32,7 +32,7 @@ OpenAQ API → MinIO (Raw Storage) → Bronze (Raw Delta Table)
 ---
 
 # 📦 Project Structure
-
+```
 OpenAQ-Real-Time-Air-Quality-Pipeline/
 │
 ├── notebooks/
@@ -42,13 +42,14 @@ OpenAQ-Real-Time-Air-Quality-Pipeline/
 │   ├── upload_to_minio.py
 │   ├── silver_cleaning.py
 │   └── gold_aggregations.py
+| 
 ├── exports/
 │   ├── pipeline.html
 │   ├── pipeline.pdf
 ├── datasets/
 │   └── sample_raw.json
 └── README.md
-
+```
 ---
 
 # 🥇 Bronze Layer – Raw Ingestion
@@ -105,6 +106,22 @@ df_silver.filter(df_silver.country_name == "UNITED STATES").show();
 • Gold: air_quality_gold_country_stats  
 
 ---
+
+# ✅ **Completed Features**
+
+### ✨ **✔️ Automated Scheduling (Every 5 Hours)**  
+⏱️⚙️ The entire pipeline runs **automatically every 5 hours** using **Databricks Job Scheduler**, executing:  
+**Ingestion → Bronze → Silver → Gold → Dashboard Refresh**  
+This ensures up-to-date global air-quality data at all times.
+
+---
+
+### 📊 **✔️ Dashboards Integrated**  
+📈📉 Beautiful dashboards built using **Databricks SQL** .  
+Includes:  
+- 🌎 Country-wise station counts  
+- 🏙️ City-level summaries  
+- 🧭 Geo-coordinate insights  
 
 # 🚀 Future Enhancements
 

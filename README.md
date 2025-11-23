@@ -8,6 +8,8 @@
 ![Badge](https://img.shields.io/badge/MinIO-Object_Storage-yellow?logo=minio)
 ![Badge](https://img.shields.io/badge/ETL-Pipeline-blueviolet)
 ![Badge](https://img.shields.io/badge/Status-Production_Ready-brightgreen)
+
+
 This project implements a complete real-time Air Quality Data Engineering pipeline built with:
 
 - OpenAQ API (global real-time air-quality data)
